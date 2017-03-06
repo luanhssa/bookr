@@ -27,5 +27,7 @@ extension Book {
     @NSManaged public var volume: Int16
     @NSManaged public var owner: User?
     @NSManaged public var borrowedTo: User?
+    @NSManaged public var available: Bool
+    @NSManaged public var category: String?
 
 }
