@@ -23,6 +23,7 @@ class BookDAO {
     
     // search
     static func searchAll() -> [Book] {
+
         var books = [Book]()
         
         let request: NSFetchRequest<Book> = Book.fetchRequest()
@@ -36,7 +37,9 @@ class BookDAO {
         } catch let error {
             print("Erro: \(error)")
         }
+ 
         
         return books
     }
+
 }
