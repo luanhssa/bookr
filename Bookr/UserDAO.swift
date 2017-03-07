@@ -11,4 +11,21 @@ import Foundation
 
 class UserDAO {
     
+    // insert
+    static func insert(user: User) -> Bool {
+        return CoreDataManager.insert(user)
+    }
+    
+    // delete
+    static func delete(user: User) -> Bool {
+        return CoreDataManager.delete(user)
+    }
+    
+    // search
+    
+    // alter
+    static func alter(user: User) -> Bool {
+        //TODO
+        return false
+    }
 }

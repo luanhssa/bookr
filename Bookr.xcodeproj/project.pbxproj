@@ -93,9 +93,9 @@
 		3FE447031E6DA103003C8B21 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				3FE446FF1E6DA0C1003C8B21 /* Book+CoreDataClass.swift */,
 				3FE447041E6DA14B003C8B21 /* UserDAO.swift */,
 				3FE447061E6DA154003C8B21 /* BookDAO.swift */,
+				3FE446FF1E6DA0C1003C8B21 /* Book+CoreDataClass.swift */,
 				3FE447001E6DA0C1003C8B21 /* Book+CoreDataProperties.swift */,
 				3FE446FB1E6DA079003C8B21 /* User+CoreDataClass.swift */,
 				3FE446FC1E6DA079003C8B21 /* User+CoreDataProperties.swift */,
@@ -347,6 +347,7 @@
 				3FE446F51E6D8C95003C8B21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
