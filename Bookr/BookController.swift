@@ -59,7 +59,9 @@ class BookController : UIViewController {
         
     
         if BookDAO.insert(book: book!) {
-            print("saved!")
+            let alert = UIAlertController(title: "Cadastrado", message: "Seu livro foi cadastrado com sucesso!", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         }
     }
     
