@@ -224,7 +224,7 @@
         <!--Cadastrar Livro-->
         <scene sceneID="l53-YO-FW1">
             <objects>
-                <viewController title="Cadastrar Livro" id="xf7-ws-1Pz" sceneMemberID="viewController">
+                <viewController title="Cadastrar Livro" id="xf7-ws-1Pz" customClass="BookController" customModule="Bookr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="36J-bq-pAM"/>
                         <viewControllerLayoutGuide type="bottom" id="Vff-bM-5l4"/>
@@ -312,6 +312,9 @@
                                         <state key="normal" title="Cadastrar">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="cadastrarLivro:" destination="xf7-ws-1Pz" eventType="touchUpInside" id="qvb-gw-5LE"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -323,6 +326,18 @@
                             <constraint firstItem="mdg-IS-5fA" firstAttribute="leading" secondItem="fOd-Eu-euX" secondAttribute="leadingMargin" constant="20" id="dgm-Xi-5sQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="anoInserir" destination="DEw-wG-Ez9" id="faP-6C-kEz"/>
+                        <outlet property="autorInserir" destination="a3e-2g-RVV" id="MRC-ag-KAE"/>
+                        <outlet property="categoriaInserir" destination="jGj-UH-lwQ" id="zwz-d1-6hf"/>
+                        <outlet property="edicaoInserir" destination="g9g-Lj-U84" id="Wo0-Vi-6oH"/>
+                        <outlet property="editoraInserir" destination="yiv-JD-8z2" id="bY5-z3-FDN"/>
+                        <outlet property="isbnInserir" destination="D5G-VC-VC1" id="238-On-c3N"/>
+                        <outlet property="paginasInserir" destination="VU1-6j-nUC" id="qH6-X8-VkJ"/>
+                        <outlet property="sinopseInserir" destination="bJn-LW-CCo" id="iK7-nv-q45"/>
+                        <outlet property="tituloInserir" destination="taO-jO-Qp6" id="BkH-cv-wDc"/>
+                        <outlet property="volumeInserir" destination="k9A-In-K8M" id="foq-5A-Pn8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6uA-n0-If6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -11,5 +11,10 @@ import CoreData
 
 
 public class Book: NSManagedObject {
-
+    convenience init() {
+        let context = CoreDataManager.getContext()
+        let entity = NSEntityDescription.entity(forEntityName: "Book", in: context)
+        
+        self.init(entity: entity!, insertInto: context)
+    }
 }
