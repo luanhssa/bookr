@@ -68,7 +68,7 @@
                                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </state>
                                                                 <connections>
-                                                                    <segue destination="q3J-D1-IAe" kind="show" id="QjR-2P-yk0"/>
+                                                                    <segue destination="q3J-D1-IAe" kind="showDetail" id="QjR-2P-yk0"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -119,9 +119,7 @@
                             <constraint firstItem="56E-Ln-EA5" firstAttribute="centerX" secondItem="GcF-0h-vAR" secondAttribute="centerX" id="oPN-Ax-8eG"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Bookr" id="Vwh-Gc-UVw">
-                        <barButtonItem key="backBarButtonItem" title="Voltar" id="iGL-ir-iMU"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Bookr" id="Vwh-Gc-UVw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XLM-SP-YJH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -354,7 +352,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="AZO-7q-sv5">
-                                <rect key="frame" x="16" y="139" width="343" height="120"/>
+                                <rect key="frame" x="16" y="99" width="343" height="120"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lSb-K8-dBm">
                                         <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
@@ -371,40 +369,54 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4kT-RJ-ZMC">
-                                <rect key="frame" x="0.0" y="355" width="375" height="199"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4kT-RJ-ZMC">
+                                <rect key="frame" x="0.0" y="328" width="375" height="226"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="RT5-or-FXg">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="RT5-or-FXg">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RT5-or-FXg" id="V83-cT-jnz">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Livros para Doar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YcO-5m-9zL">
-                                <rect key="frame" x="16" y="311" width="343" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Livros para Doar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YcO-5m-9zL">
+                                <rect key="frame" x="16" y="284" width="343" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TD2-MI-bcb">
+                                <rect key="frame" x="16" y="237" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.42352941176470588" green="0.65098039215686276" blue="0.80392156862745101" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Adicionar Livros">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xf7-ws-1Pz" kind="show" id="Dwy-O5-5c5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96470588235294119" green="0.8901960784313725" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="4kT-RJ-ZMC" firstAttribute="leading" secondItem="HVV-1d-OUU" secondAttribute="leading" id="0CF-k1-oiw"/>
                             <constraint firstItem="YcO-5m-9zL" firstAttribute="leading" secondItem="HVV-1d-OUU" secondAttribute="leadingMargin" id="4o1-Li-oMM"/>
                             <constraint firstAttribute="trailingMargin" secondItem="AZO-7q-sv5" secondAttribute="trailing" id="9Ix-s9-pBm"/>
+                            <constraint firstItem="TD2-MI-bcb" firstAttribute="trailing" secondItem="HVV-1d-OUU" secondAttribute="trailingMargin" id="CLL-m7-GPk"/>
                             <constraint firstItem="AZO-7q-sv5" firstAttribute="leading" secondItem="HVV-1d-OUU" secondAttribute="leadingMargin" id="DNZ-lD-DJ7"/>
                             <constraint firstItem="YcO-5m-9zL" firstAttribute="trailing" secondItem="HVV-1d-OUU" secondAttribute="trailingMargin" id="Ioy-qX-GBK"/>
-                            <constraint firstItem="YcO-5m-9zL" firstAttribute="top" secondItem="AZO-7q-sv5" secondAttribute="bottom" constant="52" id="LZh-k7-Awh"/>
-                            <constraint firstItem="AZO-7q-sv5" firstAttribute="top" secondItem="KaB-PJ-34F" secondAttribute="bottom" constant="75" id="PaB-cj-kfM"/>
+                            <constraint firstItem="YcO-5m-9zL" firstAttribute="top" secondItem="AZO-7q-sv5" secondAttribute="bottom" constant="65" id="LZh-k7-Awh"/>
+                            <constraint firstItem="AZO-7q-sv5" firstAttribute="top" secondItem="KaB-PJ-34F" secondAttribute="bottom" constant="35" id="PaB-cj-kfM"/>
+                            <constraint firstItem="TD2-MI-bcb" firstAttribute="top" secondItem="AZO-7q-sv5" secondAttribute="bottom" constant="18" id="S7v-4a-Ynm"/>
+                            <constraint firstItem="TD2-MI-bcb" firstAttribute="leading" secondItem="HVV-1d-OUU" secondAttribute="leadingMargin" id="ZV3-oa-ZJ7"/>
                             <constraint firstAttribute="trailing" secondItem="4kT-RJ-ZMC" secondAttribute="trailing" id="frG-iM-vSB"/>
                             <constraint firstItem="gbl-He-dAz" firstAttribute="top" secondItem="4kT-RJ-ZMC" secondAttribute="bottom" constant="64" id="mrV-wM-23r"/>
                             <constraint firstItem="4kT-RJ-ZMC" firstAttribute="top" secondItem="YcO-5m-9zL" secondAttribute="bottom" constant="21" id="oDl-Lg-Tfy"/>
                             <constraint firstItem="4kT-RJ-ZMC" firstAttribute="top" secondItem="YcO-5m-9zL" secondAttribute="bottom" constant="21" id="srk-V1-lC4"/>
+                            <constraint firstItem="YcO-5m-9zL" firstAttribute="top" secondItem="TD2-MI-bcb" secondAttribute="bottom" constant="17" id="ymU-NJ-eE0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bF0-Aj-BjU"/>

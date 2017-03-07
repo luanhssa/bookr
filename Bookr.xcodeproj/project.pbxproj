@@ -51,6 +51,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F3D1BDA1E6EE8CD0032E46B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3FE446E31E6D8C95003C8B21 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3F3D1BDB1E6EE9660032E46B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3FE446E51E6D8C95003C8B21 /* Main.storyboard */,
+				3FE446ED1E6D8C95003C8B21 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3F3D1BDC1E6EE9B80032E46B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3FE446E81E6D8C95003C8B21 /* Bookr.xcdatamodeld */,
+				3F3D1BDF1E6EEA8A0032E46B /* VO */,
+				3F3D1BDE1E6EEA1D0032E46B /* DAO */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3F3D1BDE1E6EEA1D0032E46B /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				3FE447041E6DA14B003C8B21 /* UserDAO.swift */,
+				3FE447061E6DA154003C8B21 /* BookDAO.swift */,
+				3FE446F91E6D9315003C8B21 /* CoreDataManager.swift */,
+			);
+			name = DAO;
+			sourceTree = "<group>";
+		};
+		3F3D1BDF1E6EEA8A0032E46B /* VO */ = {
+			isa = PBXGroup;
+			children = (
+				3FE446FF1E6DA0C1003C8B21 /* Book+CoreDataClass.swift */,
+				3FE447001E6DA0C1003C8B21 /* Book+CoreDataProperties.swift */,
+				3FE446FB1E6DA079003C8B21 /* User+CoreDataClass.swift */,
+				3FE446FC1E6DA079003C8B21 /* User+CoreDataProperties.swift */,
+			);
+			name = VO;
+			sourceTree = "<group>";
+		};
 		3FE446D51E6D8C95003C8B21 = {
 			isa = PBXGroup;
 			children = (
@@ -70,11 +118,9 @@
 		3FE446E01E6D8C95003C8B21 /* Bookr */ = {
 			isa = PBXGroup;
 			children = (
-				3FE446E31E6D8C95003C8B21 /* ViewController.swift */,
-				3FE446E51E6D8C95003C8B21 /* Main.storyboard */,
-				3FE446EB1E6D8C95003C8B21 /* Assets.xcassets */,
-				3FE446E81E6D8C95003C8B21 /* Bookr.xcdatamodeld */,
-				3FE447031E6DA103003C8B21 /* CoreData */,
+				3F3D1BDA1E6EE8CD0032E46B /* Controller */,
+				3F3D1BDB1E6EE9660032E46B /* View */,
+				3F3D1BDC1E6EE9B80032E46B /* Model */,
 				3FE446F61E6D8CC1003C8B21 /* Supporting Files */,
 			);
 			path = Bookr;
@@ -84,24 +130,10 @@
 			isa = PBXGroup;
 			children = (
 				3FE446E11E6D8C95003C8B21 /* AppDelegate.swift */,
-				3FE446ED1E6D8C95003C8B21 /* LaunchScreen.storyboard */,
+				3FE446EB1E6D8C95003C8B21 /* Assets.xcassets */,
 				3FE446F01E6D8C95003C8B21 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		3FE447031E6DA103003C8B21 /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-				3FE447041E6DA14B003C8B21 /* UserDAO.swift */,
-				3FE447061E6DA154003C8B21 /* BookDAO.swift */,
-				3FE446FF1E6DA0C1003C8B21 /* Book+CoreDataClass.swift */,
-				3FE447001E6DA0C1003C8B21 /* Book+CoreDataProperties.swift */,
-				3FE446FB1E6DA079003C8B21 /* User+CoreDataClass.swift */,
-				3FE446FC1E6DA079003C8B21 /* User+CoreDataProperties.swift */,
-				3FE446F91E6D9315003C8B21 /* CoreDataManager.swift */,
-			);
-			name = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
