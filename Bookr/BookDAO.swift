@@ -21,6 +21,25 @@ class BookDAO {
         return CoreDataManager.delete(user)
     }
     
-    
+    // search
+    static func searchAll() -> [Book] {
+
+        var books = [Book]()
+        
+        let request: NSFetchRequest<Book> = Book.fetchRequest()
+        
+        request.sortDescriptors = [
+            NSSortDescriptor.init(key: "category", ascending: true)
+        ]
+        
+        do {
+            try books = CoreDataManager.getContext().fetch(request)
+        } catch let error {
+            print("Erro: \(error)")
+        }
+ 
+        
+        return books
+    }
 
 }
