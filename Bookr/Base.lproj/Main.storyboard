@@ -13,7 +13,7 @@
         <!--Bookr-->
         <scene sceneID="Mvi-79-hMP">
             <objects>
-                <viewController id="a8M-dd-z4I" sceneMemberID="viewController">
+                <viewController id="a8M-dd-z4I" customClass="LoginViewController" customModule="Bookr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rtS-Jz-usA"/>
                         <viewControllerLayoutGuide type="bottom" id="Ve8-6K-xSK"/>
@@ -68,6 +68,7 @@
                                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </state>
                                                                 <connections>
+                                                                    <action selector="loginButton:" destination="a8M-dd-z4I" eventType="touchUpInside" id="imc-YO-0n4"/>
                                                                     <segue destination="q3J-D1-IAe" kind="showDetail" id="QjR-2P-yk0"/>
                                                                 </connections>
                                                             </button>
@@ -120,6 +121,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Bookr" id="Vwh-Gc-UVw"/>
+                    <connections>
+                        <outlet property="emailField" destination="zNI-Nd-Ehy" id="X6S-p9-jvy"/>
+                        <outlet property="passwordField" destination="3b9-FV-QmA" id="y6p-q5-ss1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XLM-SP-YJH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -23,6 +23,7 @@
 		3FE447021E6DA0C1003C8B21 /* Book+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE447001E6DA0C1003C8B21 /* Book+CoreDataProperties.swift */; };
 		3FE447051E6DA14B003C8B21 /* UserDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE447041E6DA14B003C8B21 /* UserDAO.swift */; };
 		3FE447071E6DA154003C8B21 /* BookDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE447061E6DA154003C8B21 /* BookDAO.swift */; };
+		3FF1E1E91E70283B00352102 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF1E1E81E70283B00352102 /* LoginViewController.swift */; };
 		681078041E6F268B00514F78 /* PasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681078031E6F268B00514F78 /* PasswordController.swift */; };
 		681078061E6F347D00514F78 /* BookProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681078051E6F347D00514F78 /* BookProfileController.swift */; };
 /* End PBXBuildFile section */
@@ -46,6 +47,7 @@
 		3FE447001E6DA0C1003C8B21 /* Book+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Book+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3FE447041E6DA14B003C8B21 /* UserDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDAO.swift; sourceTree = "<group>"; };
 		3FE447061E6DA154003C8B21 /* BookDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookDAO.swift; sourceTree = "<group>"; };
+		3FF1E1E81E70283B00352102 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		681078031E6F268B00514F78 /* PasswordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordController.swift; sourceTree = "<group>"; };
 		681078051E6F347D00514F78 /* BookProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookProfileController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				3FE446E31E6D8C95003C8B21 /* ViewController.swift */,
+				3FF1E1E81E70283B00352102 /* LoginViewController.swift */,
 				3F3D1BE41E6EFB270032E46B /* BookController.swift */,
 				681078031E6F268B00514F78 /* PasswordController.swift */,
 				681078051E6F347D00514F78 /* BookProfileController.swift */,
@@ -251,6 +254,7 @@
 				3FE446EA1E6D8C95003C8B21 /* Bookr.xcdatamodeld in Sources */,
 				681078041E6F268B00514F78 /* PasswordController.swift in Sources */,
 				3FE447021E6DA0C1003C8B21 /* Book+CoreDataProperties.swift in Sources */,
+				3FF1E1E91E70283B00352102 /* LoginViewController.swift in Sources */,
 				3FE446FD1E6DA079003C8B21 /* User+CoreDataClass.swift in Sources */,
 				3F3D1BE51E6EFB270032E46B /* BookController.swift in Sources */,
 				681078061E6F347D00514F78 /* BookProfileController.swift in Sources */,
