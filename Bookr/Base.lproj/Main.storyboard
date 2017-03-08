@@ -666,7 +666,7 @@
                                 <connections>
                                     <outlet property="author" destination="xqq-kd-vxG" id="aJ6-dN-Ah9"/>
                                     <outlet property="title" destination="oDi-Xc-PGm" id="THf-aA-Nr5"/>
-                                    <segue destination="3rr-tB-a7A" kind="show" id="xQd-bB-ZA8"/>
+                                    <segue destination="3rr-tB-a7A" kind="show" identifier="bookSegueIdentifer" id="J0m-zL-EtV"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

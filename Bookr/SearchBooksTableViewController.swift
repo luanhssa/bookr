@@ -91,7 +91,7 @@ class SearchBooksTableViewController: UITableViewController {
         return cell
     }
     
-    
+
     /*
      // Override to support conditional editing of the table view.
      override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -101,21 +101,29 @@ class SearchBooksTableViewController: UITableViewController {
      */
     
     
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            
-            books.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .fade)
-            
-            
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }
+    var valueToPass = String()
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("You selected cell #\(indexPath.row)!")
+        
+        // Get Cell Label
+        let indexPath = tableView.indexPathForSelectedRow
+        let currentCell = tableView.cellForRow(at: indexPath!) as! BookTableViewCell!;
+        
+        valueToPass = (currentCell?.title.text)!
+        performSegue(withIdentifier: "bookSegueIdentifer", sender: self)
     }
     
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "bookSegueIdentifer") {
+            // initialize new view controller and cast it as your view controller
+            var viewController = segue.destination as! BookProfileController
+            // your new view controller should have property that will store passed value
+            viewController.passedValue = valueToPass
+        }
+    }
+
 }
 
 extension SearchBooksTableViewController: UISearchResultsUpdating {
