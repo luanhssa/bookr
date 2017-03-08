@@ -10,7 +10,7 @@ import UIKit
 
 class BookProfileController: UIViewController{
     
-    var passedValue = String()
+    var passedValue = Book()
     
     @IBOutlet weak var titulo: UILabel!
     
@@ -38,7 +38,8 @@ class BookProfileController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        autor.text = passedValue
+        autor.text = passedValue.author
+        titulo.text = passedValue.name
     }
 
     
