@@ -34,12 +34,47 @@ class BookProfileController: UIViewController{
         
         
     }
+//    var isbn: Int32{
+//        if let text = isbnInserir.text{
+//            if let int32 = Int32(text){
+//                return int32
+//            }
+//        }
+//        return 0
+//    }
+//    
+//    var year: Int16{
+//        if let text = ano.text{
+//            if let int16 = Int16(text){
+//                return int16
+//            }
+//        }
+//        return 0
+//    }
+//    
+//    var paginas: Int16{
+//        if let text = pages.text{
+//            if let int16 = Int16(text){
+//                return int16
+//            }
+//        }
+//        return 0
+//    }
+//    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         autor.text = passedValue.author
         titulo.text = passedValue.name
+        //paginas.text = passedValue.pages
+        //isbn.text = passedValue.isbn
+        editora.text = passedValue.publisher
+        edicao.text = passedValue.editor
+        //ano.text = passedValue.year
+        categoria.text = passedValue.category
+        sinopse.text = passedValue.sinopse
+        
     }
 
     

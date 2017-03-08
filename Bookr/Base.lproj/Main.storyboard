@@ -677,7 +677,6 @@
                                 <connections>
                                     <outlet property="author" destination="xqq-kd-vxG" id="aJ6-dN-Ah9"/>
                                     <outlet property="title" destination="oDi-Xc-PGm" id="THf-aA-Nr5"/>
-                                    <segue destination="3rr-tB-a7A" kind="show" identifier="bookSegueIdentifer" id="J0m-zL-EtV"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -687,6 +686,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Buscar" id="UhF-dS-DxY"/>
+                    <connections>
+                        <segue destination="3rr-tB-a7A" kind="show" identifier="bookSegueIdentifer" id="y9b-kU-ebJ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aSk-Db-ZoQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -794,6 +796,7 @@
                                 </state>
                                 <connections>
                                     <action selector="doacao:" destination="3rr-tB-a7A" eventType="touchUpInside" id="3ec-zY-VW5"/>
+                                    <segue destination="TBe-bP-ZOQ" kind="show" id="gds-c9-8z5"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1015,4 +1018,7 @@
     <resources>
         <image name="bookr_icon2" width="16" height="16"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="gds-c9-8z5"/>
+    </inferredMetricsTieBreakers>
 </document>
