@@ -17,19 +17,26 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginButton(_ sender: Any) {
         let books = BookDAO.searchAll()
-
-        if(books.isEmpty) {
+        
+        for var book in books {
+            BookDAO.delete(book: book)
+        }
+        
+        if(!books.isEmpty) {
             self.populateDatabase()
         }
+        
     }
     
     func populateDatabase() {
         // Populates database
-        var user = User(entity: NSEntityDescription.entity(forEntityName: "User", in: CoreDataManager.getContext())!, insertInto: CoreDataManager.getContext())
-        user.name = "Kamilla Kemilly"
+        var user = User()
+        user.name = "Kamilla"
+        user.lastName = "Kemilly"
         user.email = "kkt@gmail.com"
         user.age = 24
         UserDAO.insert(user: user)
+        UserProfile.user = user
         
         var book = Book(entity: NSEntityDescription.entity(forEntityName: "Book", in: CoreDataManager.getContext())!, insertInto: CoreDataManager.getContext())
         book.author = "Agatha Christie"
@@ -57,7 +64,8 @@ class LoginViewController: UIViewController {
         BookDAO.insert(book: book)
         
         user = User(entity: NSEntityDescription.entity(forEntityName: "User", in: CoreDataManager.getContext())!, insertInto: CoreDataManager.getContext())
-        user.name = "Tiago Pereira"
+        user.name = "Tiago"
+        user.lastName = "Pereira"
         user.email = "tp@gmail.com"
         user.age = 42
         UserDAO.insert(user: user)
@@ -88,14 +96,18 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
-
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if (segue.identifier == "userProfileIdentifer") {
+            // initialize new view controller and cast it as your view controller
+            let viewController = segue.destination as! ProfileViewController
+            // your new view controller should have property that will store passed value
+            viewController.user = loggedUser
+        }
     }
     */
 

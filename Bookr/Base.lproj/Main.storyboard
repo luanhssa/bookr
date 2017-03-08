@@ -69,7 +69,7 @@
                                                                 </state>
                                                                 <connections>
                                                                     <action selector="loginButton:" destination="a8M-dd-z4I" eventType="touchUpInside" id="imc-YO-0n4"/>
-                                                                    <segue destination="q3J-D1-IAe" kind="showDetail" id="QjR-2P-yk0"/>
+                                                                    <segue destination="q3J-D1-IAe" kind="showDetail" identifier="" id="QjR-2P-yk0"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -370,7 +370,7 @@
         <!--Meu Perfil-->
         <scene sceneID="CEH-wf-haH">
             <objects>
-                <viewController title="Meu Perfil" id="WwK-33-HEf" sceneMemberID="viewController">
+                <viewController title="Meu Perfil" id="WwK-33-HEf" customClass="ProfileViewController" customModule="Bookr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KaB-PJ-34F"/>
                         <viewControllerLayoutGuide type="bottom" id="gbl-He-dAz"/>
@@ -401,7 +401,7 @@
                                 <rect key="frame" x="0.0" y="328" width="375" height="226"/>
                                 <color key="backgroundColor" red="0.96470588235294119" green="0.89411764705882357" blue="0.74901960784313726" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="lID-oQ-dfU" detailTextLabel="hXm-eZ-3o9" rowHeight="80" style="IBUITableViewCellStyleSubtitle" id="RT5-or-FXg">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="userBooksIdentifier" textLabel="lID-oQ-dfU" detailTextLabel="hXm-eZ-3o9" rowHeight="80" style="IBUITableViewCellStyleSubtitle" id="RT5-or-FXg" customClass="BookTableViewCell" customModule="Bookr" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RT5-or-FXg" id="V83-cT-jnz">
@@ -465,6 +465,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bF0-Aj-BjU"/>
+                    <connections>
+                        <outlet property="tableView" destination="4kT-RJ-ZMC" id="VNE-jo-EOC"/>
+                        <outlet property="userImage" destination="lSb-K8-dBm" id="46w-dj-0hZ"/>
+                        <outlet property="userName" destination="QtH-PG-Ra3" id="QED-Pe-STn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QX6-TN-9Fl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

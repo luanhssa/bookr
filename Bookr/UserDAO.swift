@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import CoreData
 
 class UserDAO {
     
