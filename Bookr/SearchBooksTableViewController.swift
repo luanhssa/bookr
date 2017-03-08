@@ -105,13 +105,24 @@ class SearchBooksTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("You selected cell #\(indexPath.row)!")
-        
+        print(indexPath.count)
+        let book: Book
         // Get Cell Label
-        let indexPath = tableView.indexPathForSelectedRow
-        let currentCell = tableView.cellForRow(at: indexPath!) as! BookTableViewCell!;
+        //let indexPath = tableView.indexPathForSelectedRow
+        //let currentCell = tableView.cellForRow(at: indexPath!) as! BookTableViewCell!;
+        book = books[(indexPath.row)]
         
-        valueToPass.name = (currentCell?.title.text)!
-        valueToPass.author = (currentCell?.author.text)!
+        valueToPass.name = book.name
+        valueToPass.author = book.author
+        valueToPass.editor = book.editor
+        valueToPass.isbn = book.isbn
+        valueToPass.pages = book.pages
+        valueToPass.volume = book.volume
+        valueToPass.publisher = book.publisher
+        valueToPass.sinopse = book.sinopse
+        
+        
+        
         performSegue(withIdentifier: "bookSegueIdentifer", sender: self)
     }
     
