@@ -17,8 +17,8 @@ class BookDAO {
     }
     
     // delete
-    static func delete(user: User) -> Bool {
-        return CoreDataManager.delete(user)
+    static func delete(book: Book) -> Bool {
+        return CoreDataManager.delete(book)
     }
     
     // search

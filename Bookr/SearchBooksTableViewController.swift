@@ -118,7 +118,7 @@ class SearchBooksTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "bookSegueIdentifer") {
             // initialize new view controller and cast it as your view controller
-            var viewController = segue.destination as! BookProfileController
+            let viewController = segue.destination as! BookProfileController
             // your new view controller should have property that will store passed value
             viewController.passedValue = valueToPass
         }
