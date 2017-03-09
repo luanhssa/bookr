@@ -67,11 +67,11 @@ class BookProfileController: UIViewController{
         
         autor.text = passedValue.author
         titulo.text = passedValue.name
-        //paginas.text = passedValue.pages
+        paginas.text = String(Int(passedValue.pages))
         //isbn.text = passedValue.isbn
         editora.text = passedValue.publisher
         edicao.text = passedValue.editor
-        //ano.text = passedValue.year
+        ano.text = String(Int(passedValue.year))
         categoria.text = passedValue.category
         sinopse.text = passedValue.sinopse
         
