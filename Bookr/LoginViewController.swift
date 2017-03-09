@@ -18,9 +18,9 @@ class LoginViewController: UIViewController {
     @IBAction func loginButton(_ sender: Any) {
         let books = BookDAO.searchAll()
         
-        for var book in books {
-            BookDAO.delete(book: book)
-        }
+//        for var book in books {
+//            BookDAO.delete(book: book)
+//        }
         
         
         self.populateDatabase()
@@ -33,7 +33,7 @@ class LoginViewController: UIViewController {
         user.name = "Kamilla"
         user.lastName = "Kemilly"
         user.email = "kkt@gmail.com"
-        user.age = 24
+        user.age = 22
         UserDAO.insert(user: user)
         UserProfile.user = user
         

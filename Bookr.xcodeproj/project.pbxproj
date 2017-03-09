@@ -73,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				3FF1E1EA1E70327C00352102 /* ProfileViewController.swift */,
+				3FBCF7811E6EF1270038A787 /* SearchBooksTableViewController.swift */,
 				3FE446E31E6D8C95003C8B21 /* ViewController.swift */,
 				3FF1E1E81E70283B00352102 /* LoginViewController.swift */,
 				3FF1E1EC1E7038FA00352102 /* UserProfile.swift */,
@@ -81,7 +82,6 @@
 				681078031E6F268B00514F78 /* PasswordController.swift */,
 				681078051E6F347D00514F78 /* BookProfileController.swift */,
 				3FBCF7831E6EF26E0038A787 /* BookTableViewCell.swift */,
-				3FBCF7811E6EF1270038A787 /* SearchBooksTableViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
