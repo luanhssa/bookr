@@ -127,6 +127,7 @@ class SearchBooksTableViewController: UITableViewController {
         valueToPass.pages = book.pages
         valueToPass.volume = book.volume
         valueToPass.publisher = book.publisher
+        valueToPass.year = book.year
         valueToPass.sinopse = book.sinopse
         
         

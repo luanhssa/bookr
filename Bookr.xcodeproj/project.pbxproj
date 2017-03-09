@@ -73,13 +73,13 @@
 			isa = PBXGroup;
 			children = (
 				3FF1E1EA1E70327C00352102 /* ProfileViewController.swift */,
-				3FBCF7811E6EF1270038A787 /* SearchBooksTableViewController.swift */,
 				3FE446E31E6D8C95003C8B21 /* ViewController.swift */,
 				3FF1E1E81E70283B00352102 /* LoginViewController.swift */,
 				3FF1E1EC1E7038FA00352102 /* UserProfile.swift */,
 				3F3D1BE41E6EFB270032E46B /* BookController.swift */,
 				3FF1E1EE1E704BE900352102 /* FAQViewController.swift */,
 				681078031E6F268B00514F78 /* PasswordController.swift */,
+				3FBCF7811E6EF1270038A787 /* SearchBooksTableViewController.swift */,
 				681078051E6F347D00514F78 /* BookProfileController.swift */,
 				3FBCF7831E6EF26E0038A787 /* BookTableViewCell.swift */,
 			);
@@ -211,6 +211,7 @@
 				TargetAttributes = {
 					3FE446DD1E6D8C95003C8B21 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8UM3G5N72P;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -392,9 +393,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8UM3G5N72P;
 				INFOPLIST_FILE = Bookr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.almeida.luan.Bookr;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.almeida.luan.Book;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -404,9 +407,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8UM3G5N72P;
 				INFOPLIST_FILE = Bookr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.almeida.luan.Bookr;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.almeida.luan.Book;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

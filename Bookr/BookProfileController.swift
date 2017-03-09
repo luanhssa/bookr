@@ -26,6 +26,8 @@ class BookProfileController: UIViewController{
     
     @IBOutlet weak var ano: UILabel!
     
+    @IBOutlet weak var volume: UILabel!
+    
     @IBOutlet weak var categoria: UILabel!
     
     @IBOutlet weak var sinopse: UILabel!
@@ -42,7 +44,8 @@ class BookProfileController: UIViewController{
         autor.text = passedValue.author
         titulo.text = passedValue.name
         paginas.text = String(Int(passedValue.pages))
-        //isbn.text = passedValue.isbn
+        isbn.text = String(Int(passedValue.isbn))
+        volume.text = String(Int(passedValue.volume))
         editora.text = passedValue.publisher
         edicao.text = passedValue.editor
         ano.text = String(Int(passedValue.year))

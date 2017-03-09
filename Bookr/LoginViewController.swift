@@ -18,9 +18,9 @@ class LoginViewController: UIViewController {
     @IBAction func loginButton(_ sender: Any) {
         let books = BookDAO.searchAll()
         
-//        for var book in books {
-//            BookDAO.delete(book: book)
-//        }
+        for var book in books {
+            BookDAO.delete(book: book)
+        }
         
         
         self.populateDatabase()
@@ -42,6 +42,9 @@ class LoginViewController: UIViewController {
         book.name = "A AVENTURA DO PUDIM DE NATAL"
         //book.isbn = Int32(9788525427304)
         book.available = true
+        book.year = 1943
+        book.volume = 2
+        book.pages = 145
         book.category = "Aventura"
         book.publisher = "Nova Fronteira"
         book.image = "aventuras_pudim_natal"
@@ -55,6 +58,9 @@ class LoginViewController: UIViewController {
         book.name = "A BELA ADORMECIDA"
         book.author = "Alice Eça"
         book.available = true
+        book.year = 1949
+        book.pages = 187
+        book.volume = 2
         book.category = "Conto"
         book.publisher = "Caramelo"
         book.image = "a_bela_adormecida"
@@ -75,6 +81,9 @@ class LoginViewController: UIViewController {
         book.name = "Cálculo - Volume 1"
         book.author = "James Stewart"
         book.available = true
+        book.year = 1960
+        book.pages = 3450
+        book.volume = 2
         book.category = "Ciencias exatas"
         book.publisher = "Cengage Learning"
         book.image = "calculo1"
