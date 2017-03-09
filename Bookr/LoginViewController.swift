@@ -22,9 +22,8 @@ class LoginViewController: UIViewController {
             BookDAO.delete(book: book)
         }
         
-        if(!books.isEmpty) {
-            self.populateDatabase()
-        }
+        
+        self.populateDatabase()
         
     }
     
