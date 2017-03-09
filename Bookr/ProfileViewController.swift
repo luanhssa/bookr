@@ -25,7 +25,7 @@ class ProfileViewController: UIViewController {
         
         user = UserProfile.user
         
-        userName.text = user.name! + " " + user.lastName!
+        userName.text = user.name + " " + user.lastName
 //        userImage.image = UIImage(named: user.image!)
         
         tableView.delegate = self
@@ -69,8 +69,6 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
         
         let books = user.hasManyBooks?.allObjects
-        
-        print(books?.count)
         
         let book = books?[indexPath.row] as! Book
         

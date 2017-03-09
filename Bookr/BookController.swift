@@ -85,12 +85,12 @@ class BookController : UIViewController {
     
     @IBAction func cadastrarLivro(_ sender: Any) {
         book = Book()
-        book?.name = tituloInserir.text
+        book?.name = tituloInserir.text!
         book?.isbn = self.isbn
         book?.year = self.year
         book?.pages = self.pages
         book?.volume = self.volume
-        book?.author = autorInserir.text
+        book?.author = autorInserir.text!
         book?.editor = editoraInserir.text
         book?.publisher = editoraInserir.text
         book?.sinopse = sinopseInserir.text

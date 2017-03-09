@@ -44,6 +44,7 @@ class LoginViewController: UIViewController {
         book.available = true
         book.category = "Aventura"
         book.publisher = "Nova Fronteira"
+        book.image = "aventuras_pudim_natal"
         book.sinopse = "Publicado originalmente em 1960, este livro contém seis histórias escolhidas pela própria autora, que faz aqui uma homenagem às festas de Natal de sua infância."
         
         user.addToHasManyBooks(book)
@@ -56,6 +57,7 @@ class LoginViewController: UIViewController {
         book.available = true
         book.category = "Conto"
         book.publisher = "Caramelo"
+        book.image = "a_bela_adormecida"
         book.sinopse = "A Bela Adormecida é um clássico conto de fadas cuja personagem principal é uma princesa que é enfeitiçada por uma maléfica feiticeira por um dedo picado pelo fuso de uma roca. para cair num sono profundo, até que um príncipe encantado a desperte com um beijo provindo de um amor verdadeiro."
         
         user.addToHasManyBooks(book)
@@ -75,13 +77,12 @@ class LoginViewController: UIViewController {
         book.available = true
         book.category = "Ciencias exatas"
         book.publisher = "Cengage Learning"
+        book.image = "calculo1"
         book.sinopse = "A 7ª edição de Cálculo traz diversas inovações em relação à edição anterior. Alguns tópicos foram reescritos para proporcionar clareza e motivação; novos exemplos foram adicionados; soluções de parte dos exemplos foram ampliadas; dados de exemplos e exercícios readequados."
         
         user.addToHasManyBooks(book)
         book.owner = user
         BookDAO.insert(book: book)
-        
-        print(BookDAO.searchAll())
     }
 
     override func viewDidLoad() {

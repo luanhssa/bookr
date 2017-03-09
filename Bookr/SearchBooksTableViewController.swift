@@ -20,7 +20,7 @@ class SearchBooksTableViewController: UITableViewController {
     // 4. Crie o método de filtragem dos dados com base no texto digitado
     func filterContent(for searchText: String, scope: String = "All") {
         filteredBooks = books.filter({ books in
-            return (books.name?.lowercased().contains(searchText.lowercased()))!
+            return (books.name.lowercased().contains(searchText.lowercased()))
         })
         
         tableView.reloadData()
@@ -71,7 +71,7 @@ class SearchBooksTableViewController: UITableViewController {
         
         //Configure the cell...
         
-        if let bookCell = cell as? BookTableViewCell{
+        if let bookCell = cell as? BookTableViewCell {
             let book: Book
             
             if searchController.isActive && searchController.searchBar.text != "" {
@@ -83,6 +83,9 @@ class SearchBooksTableViewController: UITableViewController {
             
             bookCell.title.text = book.name
             bookCell.author.text = book.author
+            if let image = book.image {
+                bookCell.imageView?.image = UIImage(named: image)
+            }
           
             
             return bookCell
@@ -104,8 +107,8 @@ class SearchBooksTableViewController: UITableViewController {
     var valueToPass = Book()
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("You selected cell #\(indexPath.row)!")
-        print(indexPath.count)
+//        print("You selected cell #\(indexPath.row)!")
+//        print(indexPath.count)
         let book: Book
         // Get Cell Label
         //let indexPath = tableView.indexPathForSelectedRow
