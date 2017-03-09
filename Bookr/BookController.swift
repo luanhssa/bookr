@@ -47,6 +47,15 @@ class BookController : UIViewController {
     
     @IBOutlet weak var sinopseInserir: UITextField!
     
+    var isbn: Int32{
+        if let text = isbnInserir.text{
+            if let int32 = Int32(text){
+                return int32
+            }
+        }
+        return 0
+    }
+    
     var year: Int16{
         if let text = anoInserir.text{
             if let int16 = Int16(text){
@@ -77,12 +86,12 @@ class BookController : UIViewController {
     @IBAction func cadastrarLivro(_ sender: Any) {
         book = Book()
         book?.name = tituloInserir.text!
-        book?.isbn = isbnInserir.text!
+        book?.isbn = self.isbn
         book?.year = self.year
         book?.pages = self.pages
         book?.volume = self.volume
         book?.author = autorInserir.text!
-        book?.edition = editoraInserir.text
+        book?.editor = editoraInserir.text
         book?.publisher = editoraInserir.text
         book?.sinopse = sinopseInserir.text
         book?.category = categoriaInserir.text

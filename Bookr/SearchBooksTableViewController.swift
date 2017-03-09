@@ -117,7 +117,7 @@ class SearchBooksTableViewController: UITableViewController {
         
         valueToPass.name = book.name
         valueToPass.author = book.author
-        valueToPass.edition = book.edition
+        valueToPass.editor = book.editor
         valueToPass.isbn = book.isbn
         valueToPass.pages = book.pages
         valueToPass.volume = book.volume

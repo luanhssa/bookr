@@ -22,7 +22,7 @@ class BookProfileController: UIViewController{
     
     @IBOutlet weak var editora: UILabel!
     
-    @IBOutlet weak var edition: UILabel!
+    @IBOutlet weak var edicao: UILabel!
     
     @IBOutlet weak var ano: UILabel!
     
@@ -70,13 +70,8 @@ class BookProfileController: UIViewController{
         paginas.text = String(Int(passedValue.pages))
         //isbn.text = passedValue.isbn
         editora.text = passedValue.publisher
-<<<<<<< Updated upstream
         edicao.text = passedValue.editor
         ano.text = String(Int(passedValue.year))
-=======
-        edition.text = passedValue.edition
-        //ano.text = passedValue.year
->>>>>>> Stashed changes
         categoria.text = passedValue.category
         sinopse.text = passedValue.sinopse
         

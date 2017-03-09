@@ -40,9 +40,7 @@ class LoginViewController: UIViewController {
         var book = Book(entity: NSEntityDescription.entity(forEntityName: "Book", in: CoreDataManager.getContext())!, insertInto: CoreDataManager.getContext())
         book.author = "Agatha Christie"
         book.name = "A AVENTURA DO PUDIM DE NATAL"
-        //book.isbn = 9788525427304
-        book.edition = "Nova Fronteira"
-        book.pages = 272
+        //book.isbn = Int32(9788525427304)
         book.available = true
         book.category = "Aventura"
         book.publisher = "Nova Fronteira"
@@ -55,9 +53,6 @@ class LoginViewController: UIViewController {
         
         book = Book(entity: NSEntityDescription.entity(forEntityName: "Book", in: CoreDataManager.getContext())!, insertInto: CoreDataManager.getContext())
         book.name = "A BELA ADORMECIDA"
-        //book.isbn = 9788573405354
-        book.edition = "Caramelo"
-        book.pages = 46
         book.author = "Alice Eça"
         book.available = true
         book.category = "Conto"
@@ -73,15 +68,12 @@ class LoginViewController: UIViewController {
         user.name = "Tiago"
         user.lastName = "Pereira"
         user.email = "tp@gmail.com"
-        user.age = 25
+        user.age = 42
         UserDAO.insert(user: user)
         
         book = Book(entity: NSEntityDescription.entity(forEntityName: "Book", in: CoreDataManager.getContext())!, insertInto: CoreDataManager.getContext())
         book.name = "Cálculo - Volume 1"
         book.author = "James Stewart"
-        //book.isbn = 9788522112586
-        book.edition = "CENGAGE LEARNING"
-        book.pages = 664
         book.available = true
         book.category = "Ciencias exatas"
         book.publisher = "Cengage Learning"
