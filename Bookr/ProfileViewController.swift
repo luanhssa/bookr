@@ -18,6 +18,20 @@ class ProfileViewController: UIViewController {
     
     var user = User()
     
+    func maskRoundedImage(image: UIImage, radius: Float) -> UIImage {
+        let imageView: UIImageView = UIImageView(image: image)
+        var layer: CALayer = CALayer()
+        layer = imageView.layer
+        
+        layer.masksToBounds = true
+        layer.cornerRadius = CGFloat(radius)
+        
+        UIGraphicsBeginImageContext(imageView.bounds.size)
+        let roundedImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return roundedImage!
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +39,10 @@ class ProfileViewController: UIViewController {
         user = UserProfile.user
         
         userName.text = user.name + " " + user.lastName
-//        userImage.image = UIImage(named: user.image!)
+        if let image = user.image {
+            let uiimage = maskRoundedImage(image: UIImage(named: image)!, radius: 45.0)
+            userImage.image = uiimage
+        }
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -50,7 +67,7 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return (user.hasManyBooks?.count)!
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -64,6 +81,10 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
         let book = books?[indexPath.row] as! Book
         
         cell.textLabel?.text = book.name
+        cell.detailTextLabel?.text = book.author
+        if let image = book.image {
+            cell.imageView?.image = UIImage(named: image)
+        }
         
         return cell
     }

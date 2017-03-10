@@ -23,13 +23,13 @@ class BookDAO {
     
     // search
     static func searchAll() -> [Book] {
-
+        
         var books = [Book]()
         
-        let request: NSFetchRequest<Book> = Book.fetchRequest()
+        let request = NSFetchRequest<Book>(entityName: "Book")
         
         request.sortDescriptors = [
-            NSSortDescriptor.init(key: "category", ascending: true)
+            NSSortDescriptor.init(key: "name", ascending: true)
         ]
         
         do {
@@ -37,7 +37,6 @@ class BookDAO {
         } catch let error {
             print("Erro: \(error)")
         }
- 
         
         return books
     }

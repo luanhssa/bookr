@@ -12,6 +12,8 @@ class BookProfileController: UIViewController{
     
     var passedValue = Book()
     
+    @IBOutlet weak var imagem: UIImageView!
+    
     @IBOutlet weak var titulo: UILabel!
     
     @IBOutlet weak var autor: UILabel!
@@ -52,6 +54,9 @@ class BookProfileController: UIViewController{
         categoria.text = passedValue.category
         sinopse.text = passedValue.sinopse
         
+        if let image = passedValue.image {
+            imagem.image = UIImage(named: image)
+        }
     }
 
     

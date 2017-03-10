@@ -29,6 +29,10 @@
 		3FF1E1EF1E704BE900352102 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF1E1EE1E704BE900352102 /* FAQViewController.swift */; };
 		681078041E6F268B00514F78 /* PasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681078031E6F268B00514F78 /* PasswordController.swift */; };
 		681078061E6F347D00514F78 /* BookProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681078051E6F347D00514F78 /* BookProfileController.swift */; };
+		686A4E551E71C11A002E25B0 /* TouchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686A4E541E71C11A002E25B0 /* TouchesViewController.swift */; };
+		686A4E571E71C58B002E25B0 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686A4E561E71C58B002E25B0 /* MessageTableViewCell.swift */; };
+		686A4E591E71C5D9002E25B0 /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686A4E581E71C5D9002E25B0 /* MessageTableViewController.swift */; };
+		686A4E5B1E71C647002E25B0 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686A4E5A1E71C647002E25B0 /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +60,10 @@
 		3FF1E1EE1E704BE900352102 /* FAQViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
 		681078031E6F268B00514F78 /* PasswordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordController.swift; sourceTree = "<group>"; };
 		681078051E6F347D00514F78 /* BookProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookProfileController.swift; sourceTree = "<group>"; };
+		686A4E541E71C11A002E25B0 /* TouchesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchesViewController.swift; sourceTree = "<group>"; };
+		686A4E561E71C58B002E25B0 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		686A4E581E71C5D9002E25B0 /* MessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
+		686A4E5A1E71C647002E25B0 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +90,10 @@
 				3FBCF7811E6EF1270038A787 /* SearchBooksTableViewController.swift */,
 				681078051E6F347D00514F78 /* BookProfileController.swift */,
 				3FBCF7831E6EF26E0038A787 /* BookTableViewCell.swift */,
+				686A4E541E71C11A002E25B0 /* TouchesViewController.swift */,
+				686A4E5A1E71C647002E25B0 /* Message.swift */,
+				686A4E581E71C5D9002E25B0 /* MessageTableViewController.swift */,
+				686A4E561E71C58B002E25B0 /* MessageTableViewCell.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -211,7 +223,7 @@
 				TargetAttributes = {
 					3FE446DD1E6D8C95003C8B21 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 8UM3G5N72P;
+						DevelopmentTeam = P8RT6BY7K8;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -254,18 +266,22 @@
 			files = (
 				3FE446E41E6D8C95003C8B21 /* ViewController.swift in Sources */,
 				3FE447071E6DA154003C8B21 /* BookDAO.swift in Sources */,
+				686A4E591E71C5D9002E25B0 /* MessageTableViewController.swift in Sources */,
 				3FE446E21E6D8C95003C8B21 /* AppDelegate.swift in Sources */,
 				3FE447011E6DA0C1003C8B21 /* Book+CoreDataClass.swift in Sources */,
 				3FBCF7841E6EF26E0038A787 /* BookTableViewCell.swift in Sources */,
 				3FE446FE1E6DA079003C8B21 /* User+CoreDataProperties.swift in Sources */,
 				3FE447051E6DA14B003C8B21 /* UserDAO.swift in Sources */,
 				3FF1E1EB1E70327C00352102 /* ProfileViewController.swift in Sources */,
+				686A4E551E71C11A002E25B0 /* TouchesViewController.swift in Sources */,
 				3FF1E1ED1E7038FA00352102 /* UserProfile.swift in Sources */,
 				3FBCF7821E6EF1270038A787 /* SearchBooksTableViewController.swift in Sources */,
 				3FE446FA1E6D9315003C8B21 /* CoreDataManager.swift in Sources */,
 				3FF1E1EF1E704BE900352102 /* FAQViewController.swift in Sources */,
 				3FE446EA1E6D8C95003C8B21 /* Bookr.xcdatamodeld in Sources */,
+				686A4E571E71C58B002E25B0 /* MessageTableViewCell.swift in Sources */,
 				681078041E6F268B00514F78 /* PasswordController.swift in Sources */,
+				686A4E5B1E71C647002E25B0 /* Message.swift in Sources */,
 				3FE447021E6DA0C1003C8B21 /* Book+CoreDataProperties.swift in Sources */,
 				3FF1E1E91E70283B00352102 /* LoginViewController.swift in Sources */,
 				3FE446FD1E6DA079003C8B21 /* User+CoreDataClass.swift in Sources */,
@@ -394,10 +410,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 8UM3G5N72P;
+				DEVELOPMENT_TEAM = P8RT6BY7K8;
 				INFOPLIST_FILE = Bookr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.almeida.luan.Book;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.almeida.luan.Bookr2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -408,10 +425,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 8UM3G5N72P;
+				DEVELOPMENT_TEAM = P8RT6BY7K8;
 				INFOPLIST_FILE = Bookr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.almeida.luan.Book;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.almeida.luan.Bookr2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

@@ -31,7 +31,7 @@ class SearchBooksTableViewController: UITableViewController {
         
         books = BookDAO.searchAll()
         
-        searchController.searchResultsUpdater = self // Por enquanto terá um erro aqui, mas ele some no passo numero 5
+        searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
         definesPresentationContext = true
         tableView.tableHeaderView = searchController.searchBar
@@ -44,7 +44,7 @@ class SearchBooksTableViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         books = BookDAO.searchAll()
-        reloadInputViews()
+        tableView.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
@@ -72,7 +72,7 @@ class SearchBooksTableViewController: UITableViewController {
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "booksIndetifier", for: indexPath)
+        var cell = tableView.dequeueReusableCell(withIdentifier: "booksIndetifier", for: indexPath)
         
         //Configure the cell...
         
@@ -85,15 +85,12 @@ class SearchBooksTableViewController: UITableViewController {
                 book = books[indexPath.row]
             }
             
-            
             bookCell.title.text = book.name
             bookCell.author.text = book.author
             if let image = book.image {
                 bookCell.imageView?.image = UIImage(named: image)
             }
-          
-            
-            return bookCell
+            cell = bookCell
         }
         
         return cell
@@ -112,26 +109,12 @@ class SearchBooksTableViewController: UITableViewController {
     var valueToPass = Book()
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        print("You selected cell #\(indexPath.row)!")
-//        print(indexPath.count)
         let book: Book
         // Get Cell Label
-        //let indexPath = tableView.indexPathForSelectedRow
-        //let currentCell = tableView.cellForRow(at: indexPath!) as! BookTableViewCell!;
         book = books[(indexPath.row)]
-        
-        valueToPass.name = book.name
-        valueToPass.author = book.author
-        valueToPass.editor = book.editor
-        valueToPass.isbn = book.isbn
-        valueToPass.pages = book.pages
-        valueToPass.volume = book.volume
-        valueToPass.publisher = book.publisher
-        valueToPass.year = book.year
-        valueToPass.sinopse = book.sinopse
-        
-        
-        
+
+        valueToPass = book
+
         performSegue(withIdentifier: "bookSegueIdentifer", sender: self)
     }
     
