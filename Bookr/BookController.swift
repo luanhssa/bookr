@@ -90,7 +90,10 @@ class BookController : UIViewController {
         }
     }
     
-    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        // Chamamos a view para forçar que a edição pare
+        self.view.endEditing(true)
+    }
     
     
 }

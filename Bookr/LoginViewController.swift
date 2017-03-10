@@ -30,8 +30,8 @@ class LoginViewController: UIViewController {
     func populateDatabase() {
         // Populates database
         var user = User()
-        user.name = "Kamilla"
-        user.lastName = "Kemilly"
+        user.name = "Juliana"
+        user.lastName = "Almeida"
         user.email = "kkt@gmail.com"
         user.age = 22
         UserDAO.insert(user: user)

@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -364,14 +363,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="AZO-7q-sv5">
                                 <rect key="frame" x="16" y="99" width="343" height="120"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kkt" translatesAutoresizingMaskIntoConstraints="NO" id="lSb-K8-dBm">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Megan-Brown" translatesAutoresizingMaskIntoConstraints="NO" id="lSb-K8-dBm">
                                         <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="120" id="E1G-0p-Sav"/>
                                             <constraint firstAttribute="width" constant="120" id="sqh-kc-3Mx"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kamilla" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QtH-PG-Ra3">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QtH-PG-Ra3">
                                         <rect key="frame" x="128" y="0.0" width="215" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -446,7 +445,7 @@
                             <constraint firstItem="gbl-He-dAz" firstAttribute="top" secondItem="4kT-RJ-ZMC" secondAttribute="bottom" constant="64" id="mrV-wM-23r"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="bF0-Aj-BjU"/>
+                    <navigationItem key="navigationItem" title="Perfil" id="bF0-Aj-BjU"/>
                     <connections>
                         <outlet property="tableView" destination="4kT-RJ-ZMC" id="VNE-jo-EOC"/>
                         <outlet property="userImage" destination="lSb-K8-dBm" id="46w-dj-0hZ"/>
@@ -648,7 +647,7 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZiI-cF-PMu">
                                             <rect key="frame" x="8" y="8.5" width="359" height="61"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uqd-Dh-iLk">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="woman-2" translatesAutoresizingMaskIntoConstraints="NO" id="Uqd-Dh-iLk">
                                                     <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="60" id="Xkw-ej-T4z"/>
@@ -706,7 +705,7 @@
         <scene sceneID="pSf-eB-aKu">
             <objects>
                 <navigationController id="0wk-Cy-q6Y" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Mensagens" id="h5K-0H-E8j"/>
+                    <tabBarItem key="tabBarItem" title="Mensagens" selectedImage="0" id="h5K-0H-E8j"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="W8E-8a-ZxR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1020,7 +1019,7 @@
             </objects>
             <point key="canvasLocation" x="-1586.4000000000001" y="-235.23238380809596"/>
         </scene>
-        <!--FAQ-->
+        <!--Ajuda-->
         <scene sceneID="jgE-o8-Ezr">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="16x-m7-bGg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1034,57 +1033,70 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YCb-gn-8ec">
-                                <rect key="frame" x="0.0" y="72" width="375" height="538"/>
+                                <rect key="frame" x="10" y="72" width="345" height="538"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="93b-LP-akP">
-                                        <rect key="frame" x="6" y="0.0" width="363" height="298"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="93b-LP-akP">
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="298"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Como adicionar um livro?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tF2-Qt-9Hz">
-                                                <rect key="frame" x="0.0" y="0.0" width="363" height="30"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="6AE-Zk-VrO"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                <color key="textColor" red="0.42352941179999998" green="0.65098039220000004" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKn-g6-5YJ">
-                                                <rect key="frame" x="0.0" y="32" width="363" height="60"/>
-                                                <color key="backgroundColor" red="0.97432738539999997" green="0.91147643330000006" blue="0.7940244675" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="60" id="cIq-tv-TDL"/>
-                                                </constraints>
-                                                <string key="text">No seu perfil haverá um opcao de adicionar livro, onde você informará todas as informações sobre ele e depois, você aperta cadastrar.</string>
-                                                <color key="textColor" red="0.42352941179999998" green="0.65098039220000004" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Como buscar um livro?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYh-6I-IRP">
-                                                <rect key="frame" x="0.0" y="94" width="363" height="30"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="lk7-s3-bwc"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                <color key="textColor" red="0.42352941179999998" green="0.65098039220000004" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Na opção Buscar, você pode digitar o nome do livro e irá ser mostrado todos os livros cadastrados com aquele nome." textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="xgC-dh-PJ2">
-                                                <rect key="frame" x="0.0" y="126" width="363" height="172"/>
-                                                <color key="backgroundColor" red="0.96470588235294119" green="0.89803921568627454" blue="0.74901960784313726" alpha="1" colorSpace="calibratedRGB"/>
-                                                <color key="textColor" red="0.42352941179999998" green="0.65098039220000004" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="ZLQ-sm-Grc">
+                                                <rect key="frame" x="0.0" y="0.0" width="345" height="139"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Como adicionar um livro?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tF2-Qt-9Hz">
+                                                        <rect key="frame" x="0.0" y="0.0" width="345" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="6AE-Zk-VrO"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <color key="textColor" red="0.42352941179999998" green="0.65098039220000004" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nKn-g6-5YJ">
+                                                        <rect key="frame" x="0.0" y="39" width="345" height="100"/>
+                                                        <color key="backgroundColor" red="0.97432738539999997" green="0.91147643330000006" blue="0.7940244675" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="l3o-BI-mjc"/>
+                                                        </constraints>
+                                                        <string key="text">No seu perfil haverá um opcao de adicionar livro, onde você informará todas as informações sobre ele e depois, você aperta cadastrar.</string>
+                                                        <color key="textColor" red="0.42352941179999998" green="0.65098039220000004" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aTb-C8-8bE">
+                                                <rect key="frame" x="0.0" y="151" width="345" height="147"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Como buscar um livro?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYh-6I-IRP">
+                                                        <rect key="frame" x="0.0" y="0.0" width="345" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="lk7-s3-bwc"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <color key="textColor" red="0.42352941179999998" green="0.65098039220000004" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Na opção Buscar, você pode digitar o nome do livro e irá ser mostrado todos os livros cadastrados com aquele nome." textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="xgC-dh-PJ2">
+                                                        <rect key="frame" x="0.0" y="30" width="345" height="117"/>
+                                                        <color key="backgroundColor" red="0.96470588235294119" green="0.89803921568627454" blue="0.74901960784313726" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="textColor" red="0.42352941179999998" green="0.65098039220000004" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="93b-LP-akP" secondAttribute="height" multiplier="375:308" id="kxl-hU-gnA"/>
+                                            <constraint firstItem="ZLQ-sm-Grc" firstAttribute="trailing" secondItem="93b-LP-akP" secondAttribute="trailingMargin" id="9Ym-p0-jA0"/>
+                                            <constraint firstItem="ZLQ-sm-Grc" firstAttribute="leading" secondItem="93b-LP-akP" secondAttribute="leadingMargin" id="RLM-JM-gSJ"/>
+                                            <constraint firstItem="aTb-C8-8bE" firstAttribute="leading" secondItem="93b-LP-akP" secondAttribute="leadingMargin" id="jqG-IB-viP"/>
+                                            <constraint firstItem="aTb-C8-8bE" firstAttribute="trailing" secondItem="93b-LP-akP" secondAttribute="trailingMargin" id="lcF-dw-jDd"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="leU-Jj-1bt">
-                                        <rect key="frame" x="0.0" y="298" width="375" height="240"/>
+                                        <rect key="frame" x="0.0" y="298" width="345" height="240"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ainda com dúvida?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adu-pG-tdL">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="345" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="fcu-dE-mBf"/>
                                                 </constraints>
@@ -1093,7 +1105,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nos envie uma mensagem:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKD-Bl-jMl">
-                                                <rect key="frame" x="0.0" y="38" width="375" height="30"/>
+                                                <rect key="frame" x="0.0" y="38" width="345" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="YiV-hX-RxV"/>
                                                 </constraints>
@@ -1102,16 +1114,16 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Nv8-Sx-4EB">
-                                                <rect key="frame" x="0.0" y="76" width="375" height="59"/>
+                                                <rect key="frame" x="0.0" y="76" width="345" height="59"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assunto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akt-pT-2ZQ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="20.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="345" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.42352941176470588" green="0.65098039215686276" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite o assunto" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CWx-DV-Q0P">
-                                                        <rect key="frame" x="0.0" y="28.5" width="375" height="30.5"/>
+                                                        <rect key="frame" x="0.0" y="28.5" width="345" height="30.5"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -1123,7 +1135,7 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9fy-D7-kft">
-                                                <rect key="frame" x="0.0" y="143" width="375" height="59"/>
+                                                <rect key="frame" x="0.0" y="143" width="345" height="59"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mensagem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MtG-UX-o3w">
                                                         <rect key="frame" x="0.0" y="0.0" width="85" height="21"/>
@@ -1135,7 +1147,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite o corpo da mensagem" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xuz-kj-YDX">
-                                                        <rect key="frame" x="0.0" y="29" width="375" height="30"/>
+                                                        <rect key="frame" x="0.0" y="29" width="345" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="v8C-iV-MdJ"/>
                                                         </constraints>
@@ -1150,7 +1162,7 @@
                                                 </constraints>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PHv-ql-fxS">
-                                                <rect key="frame" x="0.0" y="210" width="375" height="30"/>
+                                                <rect key="frame" x="0.0" y="210" width="345" height="30"/>
                                                 <color key="backgroundColor" red="0.42352941176470588" green="0.65098039215686276" blue="0.80392156862745101" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="pKl-Py-joU"/>
@@ -1185,22 +1197,22 @@
                         </subviews>
                         <color key="backgroundColor" red="0.97432738539999997" green="0.91147643330000006" blue="0.7940244675" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="YCb-gn-8ec" firstAttribute="leading" secondItem="If4-yJ-hML" secondAttribute="leading" id="I80-Fj-TYE"/>
+                            <constraint firstItem="YCb-gn-8ec" firstAttribute="leading" secondItem="If4-yJ-hML" secondAttribute="leading" constant="10" id="I80-Fj-TYE"/>
                             <constraint firstItem="kIM-5k-DA0" firstAttribute="top" secondItem="YCb-gn-8ec" secondAttribute="bottom" constant="8" id="M99-WG-JMA"/>
-                            <constraint firstAttribute="trailing" secondItem="YCb-gn-8ec" secondAttribute="trailing" id="QfE-ej-fye"/>
+                            <constraint firstAttribute="trailing" secondItem="YCb-gn-8ec" secondAttribute="trailing" constant="20" symbolic="YES" id="QfE-ej-fye"/>
                             <constraint firstItem="YCb-gn-8ec" firstAttribute="top" secondItem="pE1-si-R99" secondAttribute="bottom" constant="8" id="o5u-fQ-PzU"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="FAQ" id="7G7-X6-Eku"/>
+                    <navigationItem key="navigationItem" title="Ajuda" id="7G7-X6-Eku"/>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1432.8" y="1432.5337331334333"/>
         </scene>
-        <!--FAQ-->
+        <!--Ajuda-->
         <scene sceneID="5jX-FR-x5U">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DTG-ud-YqT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="FAQ" id="q3I-Th-9Ox"/>
+                    <tabBarItem key="tabBarItem" title="Ajuda" id="q3I-Th-9Ox"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pzj-oi-IdL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -1217,7 +1229,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="0" width="16" height="16"/>
+        <image name="Megan-Brown" width="480" height="600"/>
         <image name="bookr_icon2" width="16" height="16"/>
-        <image name="kkt" width="16" height="16"/>
+        <image name="woman-2" width="450" height="315"/>
     </resources>
 </document>

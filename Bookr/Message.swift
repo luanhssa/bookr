@@ -30,7 +30,7 @@ class MessageDAO {
     
     static func getList() -> [Message] {
         return [
-            Message(fromUser: UserProfile.user, toUser: UserProfile.user, UserProfile.user.name, "Harry Potter e a Pedra Filosofal", "kkt")
+            Message(fromUser: UserProfile.user, toUser: UserProfile.user, UserProfile.user.name, "Harry Potter e a Pedra Filosofal", "Megan-Brown")
         ]
     }
 }

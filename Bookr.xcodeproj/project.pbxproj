@@ -223,7 +223,7 @@
 				TargetAttributes = {
 					3FE446DD1E6D8C95003C8B21 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = P8RT6BY7K8;
+						DevelopmentTeam = 8UM3G5N72P;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -410,11 +410,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = P8RT6BY7K8;
+				DEVELOPMENT_TEAM = 8UM3G5N72P;
 				INFOPLIST_FILE = Bookr/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.almeida.luan.Bookr2;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.almeida.luan.Bookr3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -425,11 +425,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = P8RT6BY7K8;
+				DEVELOPMENT_TEAM = 8UM3G5N72P;
 				INFOPLIST_FILE = Bookr/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.almeida.luan.Bookr2;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.almeida.luan.Bookr3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
